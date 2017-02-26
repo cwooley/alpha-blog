@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   
+  # one line of code gives new article path, post to create articles, edit article path, patch to update articles, show article path, and more index and something else?
+  resources :articles
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
