@@ -1,6 +1,6 @@
-<h1>Create an article</h1>
+<h1> Edit Existing Article</h1>
 
-<% if @article.errors.any? %>
+<% if @article.errors.any? %>  #check for errors and display them if so
 <ul>
   <% @article.errors.full_messages.each do |msg| %>
   <li><%= msg %></li>
@@ -25,6 +25,5 @@
     <% #Submit will return a hash with the text field and text area as contents %>
     <%= f.submit %>
   </p>
-  
-  <%= link_to "Back to articles listing", articles_path %>
 <% end %>
+<%= link_to "Back to articles listing", articles_path %>
