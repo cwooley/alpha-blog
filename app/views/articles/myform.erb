@@ -1,19 +1,11 @@
-<% # I CANNOT FOR THE LIFE OF ME FIGURE OUT WHY THIS FORM IS ALL OUT OF WHACK, SO I COPIED THE CODE FROM UDEMY TO _form.html.erb THEY ARE PRACTIALLY IDENTICAL! %>
 
-<% if @article.errors.any? %>
-<h2> the following errors preventer the article from being created</h2>
-<ul>
-  <% @article.errors.full_messages.each do |msg| %>
-  <li><%= msg %></li>
-  <% end %>
-</ul>
-<% end %>
+<%= render 'shared/errors', obj: @article%> 
 
 <div class='row'>
   <div class='col-xs-12'>
     <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %>
       <div class="form-group">
-        <div class="control-label col-sm2">
+        <div class="control-label col-sm-2">
           <%= f.label :title %>
         </div>
         <div class="col-sm-8">

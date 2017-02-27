@@ -46,6 +46,15 @@ $navbar-default-bg: #6bc2ce;
   font-size: 1.7em;
 }
 
+.article-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description{
+  margin-top: 0;
+}
+
 body {
     background-image: asset-url("cork_wallet.png");
 }
