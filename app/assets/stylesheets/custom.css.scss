@@ -1,3 +1,77 @@
+$navbar-default-bg: #6bc2ce;
+
+
+
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #c1c1c1;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('guam_landscape.jpg');
+  background-size:cover;
+  height: 750px;
+}
+
+.jumbotronA {
+  background-image: asset-url('cork_wallet.png');
+  height: 750px;
+}
+
+.jumbotron h1{
+  color: #091e51;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  letter-weight: bold;
+}
+
+
+.btn-xlarge {
+  font-size: 1.7em;
+}
+
+body {
+    background-image: asset-url("swirl_pattern.png");
+}
+
+footer {
+  margin-top:45px;
+  padding-top:5px;
+  border-top:1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+}
+
+footer ul li {
+  float:left;
+  margin-left: 15px;
+  letter-weight: bold;
+}
