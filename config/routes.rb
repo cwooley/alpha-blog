@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   # one line of code gives new article path, post to create articles, edit article path, patch to update articles, show article path, and more index and something else?
   resources :articles
   
+  get 'signup', to: 'users#new'
+  resources 'users', except: [:new]
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
