@@ -72,6 +72,12 @@ $navbar-default-bg: #6bc2ce;
   padding-bottom: 15px;
 }
 
+.listing{
+  list-style: none;
+  padding-left: 0;
+}
+
+
 body {
     background-image: asset-url("cork_wallet.png");
 }
