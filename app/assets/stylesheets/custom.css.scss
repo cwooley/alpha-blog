@@ -77,6 +77,18 @@ $navbar-default-bg: #6bc2ce;
   padding-left: 0;
 }
 
+.badge{
+  background-color: rgb(82, 184, 198);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.input_checkbox input{
+    width: auto !important;
+}
+
 
 body {
     background-image: asset-url("cork_wallet.png");
@@ -104,5 +116,5 @@ footer ul {
 footer ul li {
   float:left;
   margin-left: 15px;
-  letter-weight: bold;
+  font-weight: bold;
 }
