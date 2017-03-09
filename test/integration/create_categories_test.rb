@@ -8,6 +8,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
   
   test "Get new category form and create category" do
     
+    sign_in_as(@user, "test")
     get new_category_path
     assert_template 'categories/new'
     assert_difference 'Category.count', 1 do
@@ -20,6 +21,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
   
   test "invalid category submission results in failure" do
     
+    sign_in_as(@user, "test")
     get new_category_path
     assert_template 'categories/new'
     assert_no_difference 'Category.count' do
